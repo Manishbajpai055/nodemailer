@@ -41,14 +41,7 @@ exports.SendMails = (req,res) => {
       from: 'gyandas12998@gmail.com',
       to: emails,
       subject: Subject,
-      html: `<!DOCTYPE html>
-            <html>
-            <head>
-           <body>
-           <p>`${body}`</p>
-            
-            </body>
-            </html>`
+      html:body
     };
 
     transporter.sendMail(mailOptions, function (error, info) {
