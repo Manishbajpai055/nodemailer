@@ -45,7 +45,7 @@ exports.SendMails = (req,res) => {
             <html>
             <head>
            <body>
-           <p>`${data}`</p>
+           <p>`${body}`</p>
             
             </body>
             </html>`
