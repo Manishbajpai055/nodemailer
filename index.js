@@ -4,7 +4,7 @@ const app = express()
 const _ = require('lodash');
 const nodemailer = require('nodemailer')
 
-exports.SendMails = (req,res) => {
+const SendMails = (req,res) => {
     let {emails, Subject, body} = req.body
   var transporter = nodemailer.createTransport({
     service: 'gmail',
